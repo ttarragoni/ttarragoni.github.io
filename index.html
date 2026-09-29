@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tommaso Tarragoni</title>
+<meta name="description" content="Computer engineering student in Rome. Projects: Ottomo and LinkSanitizer.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👋</text></svg>">
+<style>
+  :root {
+    --bg: #f6f7f9;
+    --ink: #161a20;
+    --muted: #5d6673;
+    --line: #d9dee5;
+    --accent: #1f4fd8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e1116;
+      --ink: #dfe4ec;
+      --muted: #8b95a3;
+      --line: #232932;
+      --accent: #7fe0c4;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 1rem/1.7 ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 5rem 1.5rem 4rem; }
+  .greet { color: var(--muted); margin: 0 0 .25rem; }
+  .greet::before { content: "> "; color: var(--accent); }
+  h1 {
+    display: inline-block;
+    margin: 0 0 2.5rem;
+    font-size: 2.25rem;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: bottom;
+    border-right: .55em solid var(--accent);
+    animation: type 1.1s steps(17, end) both, blink 1s steps(1) 1.1s infinite;
+  }
+  @keyframes type { from { width: 0; } to { width: 17ch; } }
+  @keyframes blink { 50% { border-right-color: transparent; } }
+  h2 { font-size: 1rem; font-weight: 400; color: var(--muted); margin: 0 0 .75rem; }
+  h2::after { content: ":"; }
+  section { margin-bottom: 2.75rem; }
+  p { margin: 0 0 1rem; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; text-underline-offset: .25em; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .br::before { content: "["; color: var(--muted); }
+  .br::after { content: "]"; color: var(--muted); }
+  .project { margin-bottom: 1.75rem; }
+  .project .title { font-weight: 700; }
+  .project .meta { color: var(--muted); font-size: .9rem; margin-top: .35rem; }
+  .project .meta a { margin-right: .9rem; }
+  .stack { color: var(--muted); font-size: .85rem; }
+  ul.contacts { list-style: none; padding: 0; margin: 0; }
+  ul.contacts li { margin-bottom: .2rem; }
+  ul.contacts span { display: inline-block; min-width: 6rem; color: var(--muted); }
+  footer { color: var(--muted); font-size: .85rem; border-top: 1px solid var(--line); padding-top: 1rem; }
+  @media (max-width: 480px) {
+    main { padding-top: 3rem; }
+    h1 { font-size: 1.6rem; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    h1 { animation: none; width: auto; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="greet">Hi, I'm</p>
+    <h1>Tommaso Tarragoni</h1>
+  </header>
+
+  <section>
+    <h2>About me</h2>
+    <p>Computer engineering student in Rome, Italy. I'm curious about security and the web, and I like building small products end to end whenever I spot a problem worth solving.</p>
+    <p>This page complements my CV: here is what I've built, the CV has the rest.</p>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+
+    <article class="project">
+      <div class="title"><a href="https://ottomo.it" target="_blank" rel="noopener">Ottomo</a></div>
+      <div>AI concierge for holiday homes and B&amp;Bs. The host adds the property's rules, Wi-Fi and services and puts a QR code in the room; guests scan it and get answers 24/7 in their own language.</div>
+      <div class="meta">
+        <a class="br" href="https://ottomo.it" target="_blank" rel="noopener">website</a>
+        <span class="stack">IT · EN · ES · FR · DE</span>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="title"><a href="https://chromewebstore.google.com/detail/linksanitizer/dhinkainjghgejcfodkkiccddfbfjnfj" target="_blank" rel="noopener">LinkSanitizer</a></div>
+      <div>Chrome extension that strips tracking parameters (utm_*, fbclid, gclid) from URLs before the page loads. Everything runs locally, no data is sent to external servers.</div>
+      <div class="meta">
+        <a class="br" href="https://chromewebstore.google.com/detail/linksanitizer/dhinkainjghgejcfodkkiccddfbfjnfj" target="_blank" rel="noopener">chrome web store</a>
+        <a class="br" href="https://github.com/ttarragoni/LinkSanitizer" target="_blank" rel="noopener">github</a>
+        <span class="stack">Manifest V3</span>
+      </div>
+    </article>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <ul class="contacts">
+      <li><span>email</span><a href="mailto:tommasotarragoni@gmail.com">tommasotarragoni@gmail.com</a></li>
+      <li><span>linkedin</span><a href="https://www.linkedin.com/in/tommaso-tarragoni-b85835412/" target="_blank" rel="noopener">tommaso-tarragoni</a></li>
+      <li><span>github</span><a href="https://github.com/ttarragoni" target="_blank" rel="noopener">ttarragoni</a></li>
+    </ul>
+  </section>
+
+  <footer>&copy; 2026 Tommaso Tarragoni</footer>
+</main>
+</body>
+</html>
